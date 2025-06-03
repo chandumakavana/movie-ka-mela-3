@@ -38,7 +38,7 @@ let input_movies = movies_list.map((item) => {
     <div class="text-white p-2 ">
                <div><a href="${item.link}" target="_blank"> <img src="${item.img}" alt="" class="rounded-sm"></a></div>
                <a href="${item.link}" class="hover:underline focus:underline" target="_blank"> <h2 class="text-2xl  font-bold bangers-regular max-sm:text-xl">${item.movie_name}</h2>
-                <p class="arvo-bold-italic text-sm max-sm:text-xs leading-6">${item.title} </p></a>
+                <p class="arvo-bold-italic text-sm text-black max-sm:text-xs leading-6">${item.title} </p></a>
             </div>
     `
 }).join("")
@@ -56,7 +56,7 @@ function small_menu(e){
                     <li><form action="" method="get">
                 <label for="search-movie"></label>
                 <input type="search" name="search-movie" id="search-movie" placeholder="Search"
-                    class='bg-white w-[70vw] h-8 font-serif rounded-tl-sm rounded-bl-sm focus:outline-none text-center'>
+                    class='bg-white text-black w-[70vw] h-8 font-serif rounded-tl-sm rounded-bl-sm focus:outline-none text-center'>
                 <button type="submit"
                     class="bg-red-500 absolute rounded-tr-sm rounded-br-sm text-white w-[10vw] h-8 font-serif  focus:ring-red-200 focus:ring-2 "><ion-icon
                         name="search-outline"></ion-icon></button>
