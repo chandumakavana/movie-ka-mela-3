@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bangers&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-black">
+    <!-- navbar -->
+    <nav class="h-25 flex justify-between items-center">
+        <img src="images/movie ka mela logo.png" alt="" width="90px">
+        <div>
+            <form action="" method="get" class="max-md:hidden">
+                <label for="search-movie"></label>
+                <input type="search" name="search-movie" id="search-movie" placeholder="Search"
+                    class='bg-white w-80 h-8 font-serif rounded-tl-sm rounded-bl-sm focus:outline-none text-center max-lg:w-50'>
+                <button type="submit"
+                    class="bg-red-500 absolute rounded-tr-sm rounded-br-sm text-white w-15 h-8 font-serif  focus:ring-red-200 focus:ring-2 "><ion-icon
+                        name="search-outline"></ion-icon></button>
+            </form>
+        </div>
+        <div class='text-white wdxl-lubrifont-tc-regular text-xl
+        max-md:hidden
+        '>
+            <a href="#" class="mx-2 hover:text-gray-400">BollyWood</a>
+            <a href="#" class="mx-2 hover:text-gray-400">HollyWood</a>
+            <a href="#" class="mx-2 hover:text-gray-400">Anime</a>
+            <a href="#" class="mx-2 hover:text-gray-400">Home</a>
+        </div>
+
+        <!-- small dives menu    -->
+        <div class="md:hidden">
+            <button class=" p-1"><ion-icon name="menu-outline" class="text-white text-3xl"
+                    onclick="small_menu(this)"></ion-icon></button>
+            <!-- <div class="absolute bg-black text-center text-2xl text-white w-full h-[100vh] left-0 top-0">
+                <ul class="my-10">
+                    <li><form action="" method="get">
+                <label for="search-movie"></label>
+                <input type="search" name="search-movie" id="search-movie" placeholder="Search"
+                    class='bg-white w-[70vw] h-8 font-serif rounded-tl-sm rounded-bl-sm focus:outline-none text-center'>
+                <button type="submit"
+                    class="bg-red-500 absolute rounded-tr-sm rounded-br-sm text-white w-[10vw] h-8 font-serif  focus:ring-red-200 focus:ring-2 "><ion-icon
+                        name="search-outline"></ion-icon></button>
+            </form></li>
+                    <li class="my-10"><a href="#" >BollyWood</a></li>
+                    <li class="my-10"><a href="#" >HollyWood</a></li>
+                    <li class="my-10"><a href="#" >Anime</a></li>
+                    <li class="my-10"><a href="#" >Home</a></li>
+                </ul>
+            </div> -->
+            <div id="small-menu">
+
+            </div>
+        </div>
+    </nav>
+    <hr class="bg-white h-0.5">
+
+    <!-- slider -->
+    <div class="flex justify-between gap-5 my-2 
+    max-md:hidden">
+        <div class='border-r px-5 border-white h-[100vh] w-[50vw] overflow-hidden'>
+            <marquee behavior="scroll" direction="right" scrollamount="10" loop="-1">
+                <img src="/images/1.jpg" alt="" class="h-[100vh] w-full  inline-block">
+                <img src="/images/2.jpg" alt="" class="h-[100vh] w-full  inline-block">
+                <img src="/images/3.jpg" alt="" class="h-[100vh] w-full  inline-block">
+                <img src="/images/4.jpg" alt="" class="h-[100vh] w-full  inline-block">
+                <img src="/images/5.jpg" alt="" class="h-[100vh] w-full  inline-block">
+                <img src="/images/6.jpg" alt="" class="h-[100vh] w-full  inline-block">
+            </marquee>
+        </div>
+        <div>
+            <img src="/images/movie ka mela -movies posters.png" alt="" class='object-cover h-[100vh] w-[50vw]'>
+        </div>
+    </div>
+    <hr class=" bg-red-500 h-1 max-md:hidden">
+
+    <!-- movies-grid -->
+
+    <section class="mx-4 max-md:mx-2">
+        <h1 class=" text-white text-6xl flex items-center justify-center gap-2 max-md:text-3xl"><ion-icon
+                name="videocam-outline"></ion-icon> Letest Movies</h1>
+        <div class="movies-conteiner grid grid-cols-4 gap-4 place-items-center items-stretch
+
+            max-md:grid-cols-3  max-md:gap-2
+            max-sm:grid-cols-2
+        " id="movie-grid">
+            <!-- <div class="text-white p-2">
+               <a href="#"> <img src="/images/1.jpg" alt="" class="rounded-sm"></a>
+               <a href="#" class="hover:underline "> <h2 class="text-2xl  font-bold bangers-regular">DEVA 2025</h2>
+                <p class="arvo-bold-italic text-sm leading-6"> DS4K WEB-DL [Hindi DD5.1] 4K 1080p 720p & 480p [x264/HEVC]</p></a>
+            </div> -->
+        </div>
+
+        <div class=" content-center flex justify-center items-center gap-3 my-5">
+            <button class="bg-red-600 text-white text-xl h-10 w-10 rounded-lg"><a href="#">1</a></button>
+            <button class="bg-red-600 text-white text-xl h-10 w-10 rounded-lg"><a href="#">2</a></button>
+            <button class="bg-red-600 text-white text-xl h-10 w-10 rounded-lg"><a href="#"><ion-icon
+                        name="arrow-forward-outline"></ion-icon></a></button>
+
+        </div>
+    </section>
+
+
+
+    <!-- footer  -->
+
+    <hr class="bg-white h-0.5 my-3">
+    <footer class="text-white rounded-lg shadow-sm dark:bg-gray-900 m-1 flex justify-between items-center max-md:block  ">
+        <img src="/images/movie ka mela logo.png" alt="" width="80px">
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0 dark:text-gray-400">
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline" >Contact</a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+    <script src="/script.js"></script>z
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

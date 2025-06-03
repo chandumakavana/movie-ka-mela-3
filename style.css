@@ -1,0 +1,32 @@
+.wdxl-lubrifont-tc-regular {
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+
+
+
+
+.movies-conteiner div{
+    background-image: url(/images/movies\ bg.jpg);
+    color: rgb(31, 5, 5);
+     overflow: hidden;
+}  
+
+.movies-conteiner div img:hover{
+    transform: scale(1.2); 
+    transition:  transform .5s;
+    transition-timing-function:cubic-bezier(0.25,0.1,0.25,1);
+}
+   
