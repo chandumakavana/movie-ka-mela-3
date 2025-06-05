@@ -25,19 +25,22 @@
             <form action="" method="get" class="max-md:hidden">
                 <label for="search-movie"></label>
                 <input type="search" name="search-movie" id="search-movie" placeholder="Search"
-                    class='bg-white w-80 h-8 font-serif rounded-tl-sm rounded-bl-sm focus:outline-none text-center max-lg:w-50'>
+                    class='bg-white w-80 h-8 font-serif rounded-tl-sm border rounded-bl-sm focus:outline-none text-center max-lg:w-50'>
                 <button type="submit"
                     class="bg-red-500 absolute rounded-tr-sm rounded-br-sm text-white w-15 h-8 font-serif  focus:ring-red-200 focus:ring-2 "><ion-icon
                         name="search-outline"></ion-icon></button>
             </form>
         </div>
-        <div class='text-white wdxl-lubrifont-tc-regular text-xl
+        <div id="light-dark" class='text-white wdxl-lubrifont-tc-regular text-xl mx-2
         max-md:hidden
         '>
             <a href="#" class="mx-2 hover:text-gray-400">BollyWood</a>
             <a href="#" class="mx-2 hover:text-gray-400">HollyWood</a>
             <a href="#" class="mx-2 hover:text-gray-400">Anime</a>
             <a href="#" class="mx-2 hover:text-gray-400">Home</a>
+            <button id="mode" class="px-5 py-1 bg-blue-600 rounded-lg text-center shadow-[1px_5px_24px_5px_#0866ff]"><ion-icon name="sunny-outline" class="'
+                flex items-center" id="mode-icon"></ion-icon></button>
+
         </div>
 
         <!-- small dives menu    -->
@@ -142,7 +145,7 @@
 
 
 
-    <script src="/script.js"></script>z
+    <script src="/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

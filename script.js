@@ -33,6 +33,34 @@ let movies_list = [
 
 ]
 
+let mode=true;
+let body= document.querySelector("body");
+let mode_button=document.getElementById('mode');
+let light_dark=document.getElementById("light-dark")
+mode_button.addEventListener('click',function(){
+    if(mode){
+        document.getElementById('mode-icon').name="moon-outline"
+        mode=false
+       body.classList.add('light')
+       body.classList.remove("dark")
+       light_dark.classList.add('light-tags')
+       light_dark.classList.remove('dark-tags')
+    }
+    else{
+        document.getElementById('mode-icon').name="sunny-outline"
+        mode=true
+        body.classList.add('dark') 
+        body.classList.remove("light")
+        light_dark.classList.add('dark-tags')
+       light_dark.classList.remove('light-tags')
+
+    }
+    });
+
+
+
+
+
 let input_movies = movies_list.map((item) => {
     return `
     <div class="text-white p-2 ">
