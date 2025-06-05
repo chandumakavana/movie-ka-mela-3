@@ -17,9 +17,9 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-black text-black">
+<body id="body" class="bg-black text-black">
     <!-- navbar -->
-    <nav class="h-25 flex justify-between items-center">
+    <nav class="h-25 flex justify-between items-center bg-black">
         <img src="images/movie ka mela logo.png" alt="" width="90px">
         <div>
             <form action="" method="get" class="max-md:hidden">
@@ -31,14 +31,16 @@
                         name="search-outline"></ion-icon></button>
             </form>
         </div>
-        <div id="light-dark" class='text-white wdxl-lubrifont-tc-regular text-xl mx-2 flex items-center
+        <div class='text-white wdxl-lubrifont-tc-regular text-xl mx-2 flex items-center
         max-md:hidden
         '>
             <a href="#" class="mx-2 hover:text-gray-400">BollyWood</a>
             <a href="#" class="mx-2 hover:text-gray-400">HollyWood</a>
             <a href="#" class="mx-2 hover:text-gray-400">Anime</a>
             <a href="#" class="mx-2 hover:text-gray-400">Home</a>
-            <button id="mode" class="px-5 py-1 bg-black text-white font-semibold rounded-md border-2 border-blue-500 hover:border-blue-300 hover:bg-blue-500 hover:shadow-[1px_4px_41px_0px_#0011ff] transition duration-300 "><ion-icon name="sunny-outline" class="'
+            <button id="mode"
+                class="px-5 py-1 font-semibold rounded-md border-2 border-blue-500 hover:border-blue-300 hover:bg-blue-500 hover:shadow-[1px_4px_25px_10px_#0011ff] transition duration-300 "><ion-icon
+                    name="sunny-outline" class="'
                 flex items-center" id="mode-icon"></ion-icon></button>
         </div>
 
@@ -67,7 +69,7 @@
             </div>
         </div>
     </nav>
-    <hr class="bg-white h-0.5">
+    <hr id="body" class="bg-white h-0.5">
 
     <!-- slider -->
     <div class="flex justify-between gap-5 my-2 
@@ -119,7 +121,8 @@
     <!-- footer  -->
 
     <hr class="bg-white h-0.5 my-3">
-    <footer class="text-white rounded-lg shadow-sm dark:bg-gray-900 m-1 flex justify-between items-center max-md:block  ">
+    <footer
+        class="text-white rounded-lg shadow-sm dark:bg-gray-900 m-1 flex justify-between items-center max-md:block  ">
         <img src="/images/movie ka mela logo.png" alt="" width="80px">
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
                 href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
@@ -134,7 +137,7 @@
                 <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
             </li>
             <li>
-                <a href="#" class="hover:underline" >Contact</a>
+                <a href="#" class="hover:underline">Contact</a>
             </li>
         </ul>
     </footer>

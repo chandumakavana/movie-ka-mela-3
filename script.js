@@ -34,8 +34,8 @@ let movies_list = [
 ]
 
 let mode=true;
-let body= document.querySelector("body");
-let mode_button=document.getElementById('mode');
+let body= document.getElementById("body");
+let mode_button=document.getElementById     ('mode');
 let light_dark=document.getElementById("light-dark")
 mode_button.addEventListener('click',function(){
     if(mode){
