@@ -29,9 +29,14 @@
 
 .light-tags{
   color: black;
+  transition: 0.5s;
+  transition-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
 }
 .dark-tags{
   color: white;
+  transition: 0.5s;
+  transition-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 
