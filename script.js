@@ -35,7 +35,7 @@ let movies_list = [
 
 let mode=true;
 let body= document.getElementById("body");
-let mode_button=document.getElementById     ('mode');
+let mode_button=document.getElementById('mode');
 let light_dark=document.getElementById("light-dark")
 mode_button.addEventListener('click',function(){
     if(mode){
@@ -74,12 +74,14 @@ let input_movies = movies_list.map((item) => {
 document.getElementById('movie-grid').innerHTML = input_movies
 
 
+
+// samll dive menu
 let input_menu=true;
 
 function small_menu(e){
     if (input_menu)
     {document.getElementById('small-menu').innerHTML=`
-            <div class="absolute bg-black text-center text-2xl text-white w-full h-[100vh] left-0 top-25">
+            <div class="absolute bg-black text-center text-2xl text-white w-full h-[100vh] left-0 top-24 z-50">
                 <ul class="my-10">
                     <li><form action="" method="get">
                 <label for="search-movie"></label>
